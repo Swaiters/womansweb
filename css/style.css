@@ -9,10 +9,10 @@
   margin: 0;
   padding: 0; 
   box-sizing: border-box; 
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana,Roboto, Geneva, Tahoma, sans-serif;
 }
 .container{
-  max-width: 1280px; 
+  max-width: 1280px;
   top: 0;
   width: 100%;
   margin: 0 auto;
@@ -32,7 +32,9 @@ nav {
 }
 li{
   display:inline;
+  color: var(--light);
 }
+nav
 .hamburger{
   display: block;
   position: relative;
@@ -110,15 +112,78 @@ li{
   }
 }
 main{
-margin: 0  20px;
+margin: 0  0px;
 padding: 0;
 
+background-image: url(../images/background_pic.gif);
+background-image: fixed;
+
+
 }
+a.skip{
+  background: white;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: left 1s ease-out;
+  z-index: 1;
+  position: absolute ;
+  top: -200px; 
+  left: -400px; 
+}
+a.skip:focus{
+  top: 20px;
+  left: 0px;
+}
+a.skip {
+      -webkit-transition: initial; 
+      transition: initial; 
+    }
 body{
   margin: 0;
   background: #f6f4f4;
   font-family:sans-serif;
   font-weight: 300;
+  color: var(--light);
+}
+
+.grid{
+    display: inline-grid;
+    width: 50%;
+    margin-top: 2vw;
+    margin-left: 25vw;
+    border-radius: 25px;
+    justify-content: space-between;
+   
+    grid-template-columns: 1fr ;
+    column-gap: 50px ;
+    row-gap: 20px;
+    
+}
+.grid h2 {
+  color:#212121;
+}
+.grid li{
+  color:#212121;
+}
+.grid p {
+  color:#212121;
+}
+.grid div{
+ 
+  border: solid 2px black;
+  color: #212121;
+  border-radius: 25px  ;
+  background-color: rgb(245,245,245) ;
+  padding: 10px 10px 10px 10px ;  
+
+}
+
+.grid img{
+  
+  width: 90%;
+  margin: auto ;
+  display: block;
+
 }
 
 img{
@@ -128,13 +193,13 @@ img{
   margin:auto;
   width: 75%;
 }
-/* index_img (home page) specific format */
+
 #index_img {
   border: 1px solid var(--primary);
   border-radius:25 px;
-  padding: 100px;
+  padding: 0px;
   width: 100%;
-  margin: auto ;
+  margin-top: 5px  ;
 }
 img:nth-child(2n){
   border-style:outset;
@@ -149,9 +214,23 @@ img:hover{
   border:groove 11px var(--primary);
   
 }
-
 img:nth-child(2n) :hover{
   border:groove 20px
+}
+
+#definition{
+  font-size: 30px;
+}
+.footer{
+  
+  background-color: #212121;
+}
+.footer p {
+color: #fff;
+}
+.footer a{
+  color: #fff;
+}
 }
 h1{
 font-size: 30px;
@@ -163,12 +242,10 @@ text-transform: uppercase;
 }
 h2{
   font-size: 25px;
-  color:black;
+  color:var(--light);
   font-weight: bold;
-  
-  
-
 }
 p{
-line-height: 2;
+  color: var(--light);
+  line-height: 2;
 }
