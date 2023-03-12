@@ -232,7 +232,7 @@ img{
   margin-top: 5px  ;
 }
 img:nth-child(2n){
-  border-style:outset;
+  border-style:inset;
 }
 div:nth-child(2n) img{
   border-style: inset;
@@ -241,10 +241,10 @@ div:nth-child(2n) img{
 }
 img:hover{
   transition: 0.35s ;
-  border:groove 11px var(--primary);
+  border:outset 6px var(--primary);
 }
 img:nth-child(2n) :hover{
-  border:groove 20px
+  border:inset 20px
 }
 
 #about{
